@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-17 14:33:46.034845",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "insurance_provider",
+  "coverage_type",
+  "vehicle_age_from",
+  "vehicle_age_to",
+  "fuel_type",
+  "base_rate_",
+  "min_premium",
+  "ncb_allowed",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "insurance_provider",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Insurance Provider",
+   "options": "Insurance Provider",
+   "reqd": 1
+  },
+  {
+   "fieldname": "coverage_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Coverage Type",
+   "options": "Coverage Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vehicle_age_from",
+   "fieldtype": "Int",
+   "label": "Vehicle Age From"
+  },
+  {
+   "fieldname": "vehicle_age_to",
+   "fieldtype": "Int",
+   "label": "Vehicle Age To"
+  },
+  {
+   "fieldname": "fuel_type",
+   "fieldtype": "Select",
+   "label": "Fuel Type",
+   "options": "Petrol\nDiesel\nEV\nCNG"
+  },
+  {
+   "fieldname": "base_rate_",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Base Rate %",
+   "reqd": 1
+  },
+  {
+   "fieldname": "min_premium",
+   "fieldtype": "Currency",
+   "label": "Min Premium"
+  },
+  {
+   "default": "0",
+   "fieldname": "ncb_allowed",
+   "fieldtype": "Check",
+   "label": "NCB Allowed"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-17 14:41:54.756426",
+ "modified_by": "Administrator",
+ "module": "Motor Insurance Broker",
+ "name": "Provider Rate Rule",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
