@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-17 13:34:45.795000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "add_on_name",
+  "add_on_code",
+  "description",
+  "active"
+ ],
+ "fields": [
+  {
+   "fieldname": "add_on_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Add on Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "add_on_code",
+   "fieldtype": "Data",
+   "label": "Add on Code"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-17 13:36:57.785356",
+ "modified_by": "Administrator",
+ "module": "Motor Insurance Broker",
+ "name": "Insurance Add-on",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
