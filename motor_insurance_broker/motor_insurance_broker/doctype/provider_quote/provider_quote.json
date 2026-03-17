@@ -1,0 +1,175 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "PQ-.YYYY.-.#####",
+ "creation": "2026-03-17 13:01:29.811793",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_2lcq",
+  "quote_request",
+  "quote_version",
+  "insurance_provider",
+  "coverage_type",
+  "idv",
+  "base_premium",
+  "addon_premium",
+  "ncb_discount",
+  "discount_amount",
+  "gst_amount",
+  "total_premium",
+  "commission_percent",
+  "expected_commission",
+  "is_lowest_premium",
+  "is_recommended",
+  "is_selected_by_customer",
+  "sent_by_email",
+  "sent_by_whatsapp",
+  "remarks",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_2lcq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "quote_request",
+   "fieldtype": "Link",
+   "label": "Quote Request",
+   "options": "Motor Insurance Quote Request"
+  },
+  {
+   "fieldname": "quote_version",
+   "fieldtype": "Int",
+   "label": "Quote Version"
+  },
+  {
+   "fieldname": "insurance_provider",
+   "fieldtype": "Link",
+   "label": "Provider",
+   "options": "Insurance Provider"
+  },
+  {
+   "fieldname": "coverage_type",
+   "fieldtype": "Link",
+   "label": "Coverage Type",
+   "options": "Coverage Type"
+  },
+  {
+   "fieldname": "idv",
+   "fieldtype": "Currency",
+   "label": "IDV"
+  },
+  {
+   "fieldname": "base_premium",
+   "fieldtype": "Currency",
+   "label": "Base Premium"
+  },
+  {
+   "fieldname": "addon_premium",
+   "fieldtype": "Currency",
+   "label": "Add-on Premium"
+  },
+  {
+   "fieldname": "ncb_discount",
+   "fieldtype": "Currency",
+   "label": "NCB Discount"
+  },
+  {
+   "fieldname": "discount_amount",
+   "fieldtype": "Currency",
+   "label": "Discount"
+  },
+  {
+   "fieldname": "gst_amount",
+   "fieldtype": "Currency",
+   "label": "GST"
+  },
+  {
+   "fieldname": "total_premium",
+   "fieldtype": "Currency",
+   "label": "Total Premium"
+  },
+  {
+   "fieldname": "commission_percent",
+   "fieldtype": "Percent",
+   "label": "Commission %"
+  },
+  {
+   "fieldname": "expected_commission",
+   "fieldtype": "Currency",
+   "label": "Expected Commission"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_lowest_premium",
+   "fieldtype": "Check",
+   "label": "Is Lowest"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_recommended",
+   "fieldtype": "Check",
+   "label": "Recommended"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_selected_by_customer",
+   "fieldtype": "Check",
+   "label": "Selected"
+  },
+  {
+   "default": "0",
+   "fieldname": "sent_by_email",
+   "fieldtype": "Check",
+   "label": "Sent Email"
+  },
+  {
+   "default": "0",
+   "fieldname": "sent_by_whatsapp",
+   "fieldtype": "Check",
+   "label": "Sent WhatsApp"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nCalculated\nShared\nSelected\nRejected"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-17 13:30:14.835686",
+ "modified_by": "Administrator",
+ "module": "Motor Insurance Broker",
+ "name": "Provider Quote",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
