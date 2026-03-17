@@ -1,0 +1,311 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "MIQ-.YYYY.-.#####",
+ "creation": "2026-03-17 12:19:00.112983",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_pmoa",
+  "customer_details_section",
+  "lead",
+  "customer_name",
+  "mobile_number",
+  "email_address",
+  "assigned_executive",
+  "vehicle_info_section",
+  "vehicle_registration_no",
+  "make",
+  "model",
+  "variant",
+  "manufacturing_year",
+  "fuel_type",
+  "rto_location",
+  "idv",
+  "vehicle_age",
+  "existing_policy_section",
+  "existing_provider",
+  "existing_policy_number",
+  "existing_policy_expiry_date",
+  "existing_ncb_percent",
+  "existing_policy_type",
+  "claim_made_last_year",
+  "existing_premium",
+  "required_cover_section",
+  "coverage_type",
+  "zero_dep_required",
+  "addons",
+  "broker_notes",
+  "status_section",
+  "quote_version",
+  "proposal_shared",
+  "customer_selected",
+  "final_provider",
+  "final_premium",
+  "final_policy_number",
+  "policy_issued_date",
+  "policy_start_date",
+  "policy_end_date",
+  "policy_copy",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Details"
+  },
+  {
+   "fieldname": "lead",
+   "fieldtype": "Link",
+   "label": "Lead",
+   "options": "Lead"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Mobile Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "assigned_executive",
+   "fieldtype": "Link",
+   "label": "Assigned Executive",
+   "options": "User"
+  },
+  {
+   "fieldname": "vehicle_info_section",
+   "fieldtype": "Section Break",
+   "label": "Vehicle Info"
+  },
+  {
+   "fieldname": "vehicle_registration_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Vehicle Reg No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "make",
+   "fieldtype": "Data",
+   "label": "Make"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "variant",
+   "fieldtype": "Data",
+   "label": "Variant"
+  },
+  {
+   "fieldname": "manufacturing_year",
+   "fieldtype": "Int",
+   "label": "Manufacturing Year"
+  },
+  {
+   "fieldname": "fuel_type",
+   "fieldtype": "Select",
+   "label": "Fuel Type",
+   "options": "Petrol\nDiesel\nEV\nCNG"
+  },
+  {
+   "fieldname": "rto_location",
+   "fieldtype": "Data",
+   "label": "RTO Location"
+  },
+  {
+   "fieldname": "idv",
+   "fieldtype": "Currency",
+   "label": "IDV"
+  },
+  {
+   "fieldname": "vehicle_age",
+   "fieldtype": "Int",
+   "label": "Vehicle Age"
+  },
+  {
+   "fieldname": "existing_policy_section",
+   "fieldtype": "Section Break",
+   "label": "Existing Policy"
+  },
+  {
+   "fieldname": "existing_provider",
+   "fieldtype": "Link",
+   "label": "Existing Provider",
+   "options": "Insurance Provider"
+  },
+  {
+   "fieldname": "existing_policy_number",
+   "fieldtype": "Data",
+   "label": "Policy Number"
+  },
+  {
+   "fieldname": "existing_policy_expiry_date",
+   "fieldtype": "Date",
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "existing_ncb_percent",
+   "fieldtype": "Percent",
+   "label": "NCB %"
+  },
+  {
+   "fieldname": "existing_policy_type",
+   "fieldtype": "Select",
+   "label": "Policy Type",
+   "options": "Third Party\nComprehensive"
+  },
+  {
+   "default": "0",
+   "fieldname": "claim_made_last_year",
+   "fieldtype": "Check",
+   "label": "Claim Made"
+  },
+  {
+   "fieldname": "existing_premium",
+   "fieldtype": "Currency",
+   "label": "Existing Premium"
+  },
+  {
+   "fieldname": "required_cover_section",
+   "fieldtype": "Section Break",
+   "label": "Required Cover"
+  },
+  {
+   "fieldname": "coverage_type",
+   "fieldtype": "Link",
+   "label": "Coverage Type",
+   "options": "Coverage Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "zero_dep_required",
+   "fieldtype": "Check",
+   "label": "Zero Dep Required"
+  },
+  {
+   "fieldname": "addons",
+   "fieldtype": "Table",
+   "label": "Add-ons",
+   "options": "Quote Request Add-on"
+  },
+  {
+   "fieldname": "broker_notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "status_section",
+   "fieldtype": "Section Break",
+   "label": "Status"
+  },
+  {
+   "fieldname": "quote_version",
+   "fieldtype": "Int",
+   "label": "Quote Version"
+  },
+  {
+   "default": "0",
+   "fieldname": "proposal_shared",
+   "fieldtype": "Check",
+   "label": "Proposal Shared"
+  },
+  {
+   "default": "0",
+   "fieldname": "customer_selected",
+   "fieldtype": "Check",
+   "label": "Customer Selected"
+  },
+  {
+   "fieldname": "final_provider",
+   "fieldtype": "Link",
+   "label": "Final Provider",
+   "options": "Insurance Provider"
+  },
+  {
+   "fieldname": "final_premium",
+   "fieldtype": "Currency",
+   "label": "Final Premium"
+  },
+  {
+   "fieldname": "final_policy_number",
+   "fieldtype": "Data",
+   "label": "Final Policy No"
+  },
+  {
+   "fieldname": "policy_issued_date",
+   "fieldtype": "Date",
+   "label": "Policy Issued Date"
+  },
+  {
+   "fieldname": "policy_start_date",
+   "fieldtype": "Date",
+   "label": "Policy Start Date"
+  },
+  {
+   "fieldname": "policy_end_date",
+   "fieldtype": "Date",
+   "label": "Policy End Date"
+  },
+  {
+   "fieldname": "policy_copy",
+   "fieldtype": "Attach",
+   "label": "Policy Copy"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nQuote Generated\nProposal Shared\nSelected\nFinal Recorded\nLost"
+  },
+  {
+   "fieldname": "section_break_pmoa",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-17 14:00:43.765418",
+ "modified_by": "Administrator",
+ "module": "Motor Insurance Broker",
+ "name": "Motor Insurance Quote Request",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
