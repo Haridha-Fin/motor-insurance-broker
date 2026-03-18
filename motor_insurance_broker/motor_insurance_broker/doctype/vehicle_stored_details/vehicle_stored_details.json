@@ -1,0 +1,280 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "VSD-.#####",
+ "creation": "2026-03-17 18:42:08.256729",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_zxvp",
+  "vehicle_type",
+  "registration_number",
+  "registration_date",
+  "rto_location",
+  "state",
+  "manufacturer",
+  "model",
+  "variant",
+  "fuel_type",
+  "transmission_type",
+  "vehicle_color",
+  "manufacturing_year",
+  "manufacturing_month",
+  "vehicle_age",
+  "engine_number",
+  "chassis_number",
+  "cubic_capacity",
+  "seating_capacity",
+  "gross_vehicle_weight",
+  "policy_type",
+  "insurance_provider",
+  "previous_policy_number",
+  "previous_insurer",
+  "policy_expiry_date",
+  "ncb_percentage",
+  "idv",
+  "vehicle_usage",
+  "claim_made_last_year",
+  "owner_name",
+  "owner_mobile",
+  "owner_email",
+  "owner_address",
+  "ownership_type",
+  "financer_name",
+  "is_new_vehicle",
+  "is_active",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_zxvp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "vehicle_type",
+   "fieldtype": "Select",
+   "label": "Vehicle Type",
+   "options": "Car\nBike\nVan\nBus\nTruck\nAuto\nOther"
+  },
+  {
+   "fieldname": "registration_number",
+   "fieldtype": "Data",
+   "label": "Registration Number"
+  },
+  {
+   "fieldname": "registration_date",
+   "fieldtype": "Date",
+   "label": "Registration Date"
+  },
+  {
+   "fieldname": "rto_location",
+   "fieldtype": "Data",
+   "label": "RTO Location"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Data",
+   "label": "Manufacturer"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "variant",
+   "fieldtype": "Data",
+   "label": "Variant"
+  },
+  {
+   "fieldname": "fuel_type",
+   "fieldtype": "Select",
+   "label": "Fuel Type",
+   "options": "Petrol\nDiesel\nCNG\nLPG\nElectric\nHybrid"
+  },
+  {
+   "fieldname": "transmission_type",
+   "fieldtype": "Select",
+   "label": "Transmission Type",
+   "options": "Manual\nAutomatic"
+  },
+  {
+   "fieldname": "vehicle_color",
+   "fieldtype": "Data",
+   "label": "Vehicle Color"
+  },
+  {
+   "fieldname": "manufacturing_year",
+   "fieldtype": "Int",
+   "label": "Manufacturing Year"
+  },
+  {
+   "fieldname": "manufacturing_month",
+   "fieldtype": "Select",
+   "label": "Manufacturing Month",
+   "options": "January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
+  },
+  {
+   "fieldname": "vehicle_age",
+   "fieldtype": "Int",
+   "label": "Vehicle Age"
+  },
+  {
+   "fieldname": "engine_number",
+   "fieldtype": "Data",
+   "label": "Engine Number"
+  },
+  {
+   "fieldname": "chassis_number",
+   "fieldtype": "Data",
+   "label": "Chassis Number"
+  },
+  {
+   "fieldname": "cubic_capacity",
+   "fieldtype": "Float",
+   "label": "Cubic Capacity"
+  },
+  {
+   "fieldname": "seating_capacity",
+   "fieldtype": "Int",
+   "label": "Seating Capacity"
+  },
+  {
+   "fieldname": "gross_vehicle_weight",
+   "fieldtype": "Float",
+   "label": "Gross Vehicle Weight"
+  },
+  {
+   "fieldname": "policy_type",
+   "fieldtype": "Select",
+   "label": "Policy Type",
+   "options": "Third Party\nComprehensive\nOwn Damage\nZero Dep"
+  },
+  {
+   "fieldname": "insurance_provider",
+   "fieldtype": "Link",
+   "label": "Insurance Provider",
+   "options": "Insurance Provider"
+  },
+  {
+   "fieldname": "previous_policy_number",
+   "fieldtype": "Data",
+   "label": "Previous Policy Number"
+  },
+  {
+   "fieldname": "previous_insurer",
+   "fieldtype": "Link",
+   "label": "Previous Insurer",
+   "options": "Insurance Provider"
+  },
+  {
+   "fieldname": "policy_expiry_date",
+   "fieldtype": "Date",
+   "label": "Policy Expiry Date"
+  },
+  {
+   "fieldname": "ncb_percentage",
+   "fieldtype": "Percent",
+   "label": "NCB Percentage"
+  },
+  {
+   "fieldname": "idv",
+   "fieldtype": "Currency",
+   "label": "IDV"
+  },
+  {
+   "fieldname": "vehicle_usage",
+   "fieldtype": "Select",
+   "label": "Vehicle Usage",
+   "options": "Personal\nCommercial"
+  },
+  {
+   "default": "0",
+   "fieldname": "claim_made_last_year",
+   "fieldtype": "Check",
+   "label": "Claim Made Last Year"
+  },
+  {
+   "fieldname": "owner_name",
+   "fieldtype": "Data",
+   "label": "Owner Name"
+  },
+  {
+   "fieldname": "owner_mobile",
+   "fieldtype": "Data",
+   "label": "Owner Mobile"
+  },
+  {
+   "fieldname": "owner_email",
+   "fieldtype": "Data",
+   "label": "Owner Email"
+  },
+  {
+   "fieldname": "owner_address",
+   "fieldtype": "Small Text",
+   "label": "Owner Address"
+  },
+  {
+   "fieldname": "ownership_type",
+   "fieldtype": "Select",
+   "label": "Ownership Type",
+   "options": "Individual\nCompany"
+  },
+  {
+   "fieldname": "financer_name",
+   "fieldtype": "Data",
+   "label": "Financer Name"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_new_vehicle",
+   "fieldtype": "Check",
+   "label": "Is New Vehicle"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-18 10:36:39.400589",
+ "modified_by": "Administrator",
+ "module": "Motor Insurance Broker",
+ "name": "Vehicle Stored Details",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

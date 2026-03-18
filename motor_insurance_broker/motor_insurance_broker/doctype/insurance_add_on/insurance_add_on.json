@@ -1,12 +1,14 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:add_on_name",
  "creation": "2026-03-17 13:34:45.795000",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "add_on_name",
   "add_on_code",
+  "add_on_premium",
   "description",
   "active"
  ],
@@ -16,7 +18,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Add on Name",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "add_on_code",
@@ -33,15 +36,21 @@
    "fieldname": "active",
    "fieldtype": "Check",
    "label": "Active"
+  },
+  {
+   "fieldname": "add_on_premium",
+   "fieldtype": "Data",
+   "label": "Add on Premium"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-17 13:36:57.785356",
+ "modified": "2026-03-18 12:35:16.020142",
  "modified_by": "Administrator",
  "module": "Motor Insurance Broker",
  "name": "Insurance Add-on",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -61,5 +70,6 @@
  "rows_threshold_for_grid_search": 20,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }

@@ -51,14 +51,15 @@
    "options": "Insurance Provider"
   },
   {
+   "fetch_from": "quote_request.coverage_type",
    "fieldname": "coverage_type",
-   "fieldtype": "Link",
-   "label": "Coverage Type",
-   "options": "Coverage Type"
+   "fieldtype": "Data",
+   "label": "Coverage Type"
   },
   {
+   "fetch_from": "quote_request.idv",
    "fieldname": "idv",
-   "fieldtype": "Currency",
+   "fieldtype": "Data",
    "label": "IDV"
   },
   {
@@ -92,8 +93,9 @@
    "label": "Total Premium"
   },
   {
+   "fetch_from": "insurance_provider.commission_",
    "fieldname": "commission_percent",
-   "fieldtype": "Percent",
+   "fieldtype": "Data",
    "label": "Commission %"
   },
   {
@@ -146,7 +148,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-17 13:30:14.835686",
+ "modified": "2026-03-18 13:15:32.082277",
  "modified_by": "Administrator",
  "module": "Motor Insurance Broker",
  "name": "Provider Quote",

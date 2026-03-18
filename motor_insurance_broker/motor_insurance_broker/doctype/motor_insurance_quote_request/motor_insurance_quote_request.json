@@ -6,7 +6,6 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_pmoa",
   "customer_details_section",
   "lead",
   "customer_name",
@@ -14,6 +13,7 @@
   "email_address",
   "assigned_executive",
   "vehicle_info_section",
+  "vehicle_type",
   "vehicle_registration_no",
   "make",
   "model",
@@ -62,6 +62,7 @@
    "options": "Lead"
   },
   {
+   "fetch_from": "lead.lead_name",
    "fieldname": "customer_name",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -69,13 +70,15 @@
    "reqd": 1
   },
   {
+   "fetch_from": "lead.mobile_no",
    "fieldname": "mobile_number",
-   "fieldtype": "Phone",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Mobile Number",
    "reqd": 1
   },
   {
+   "fetch_from": "lead.email_id",
    "fieldname": "email_address",
    "fieldtype": "Data",
    "label": "Email"
@@ -92,6 +95,7 @@
    "label": "Vehicle Info"
   },
   {
+   "fetch_from": "vehicle_type.registration_number",
    "fieldname": "vehicle_registration_no",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -99,44 +103,51 @@
    "reqd": 1
   },
   {
+   "fetch_from": "vehicle_type.manufacturer",
    "fieldname": "make",
    "fieldtype": "Data",
    "label": "Make"
   },
   {
+   "fetch_from": "vehicle_type.model",
    "fieldname": "model",
    "fieldtype": "Data",
    "label": "Model"
   },
   {
+   "fetch_from": "vehicle_type.variant",
    "fieldname": "variant",
    "fieldtype": "Data",
    "label": "Variant"
   },
   {
+   "fetch_from": "vehicle_type.manufacturing_year",
    "fieldname": "manufacturing_year",
    "fieldtype": "Int",
    "label": "Manufacturing Year"
   },
   {
+   "fetch_from": "vehicle_type.fuel_type",
    "fieldname": "fuel_type",
-   "fieldtype": "Select",
-   "label": "Fuel Type",
-   "options": "Petrol\nDiesel\nEV\nCNG"
+   "fieldtype": "Data",
+   "label": "Fuel Type"
   },
   {
+   "fetch_from": "vehicle_type.rto_location",
    "fieldname": "rto_location",
    "fieldtype": "Data",
    "label": "RTO Location"
   },
   {
+   "fetch_from": "vehicle_type.idv",
    "fieldname": "idv",
-   "fieldtype": "Currency",
+   "fieldtype": "Data",
    "label": "IDV"
   },
   {
+   "fetch_from": "vehicle_type.vehicle_age",
    "fieldname": "vehicle_age",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "label": "Vehicle Age"
   },
   {
@@ -275,14 +286,16 @@
    "options": "Draft\nQuote Generated\nProposal Shared\nSelected\nFinal Recorded\nLost"
   },
   {
-   "fieldname": "section_break_pmoa",
-   "fieldtype": "Section Break"
+   "fieldname": "vehicle_type",
+   "fieldtype": "Link",
+   "label": "Vehicle Type",
+   "options": "Vehicle Stored Details"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-17 14:00:43.765418",
+ "modified": "2026-03-18 10:54:03.364637",
  "modified_by": "Administrator",
  "module": "Motor Insurance Broker",
  "name": "Motor Insurance Quote Request",

@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "PRR-.{insurance_provider}-.#####",
  "creation": "2026-03-17 14:33:46.034845",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -76,10 +77,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-17 14:41:54.756426",
+ "modified": "2026-03-17 15:59:51.981383",
  "modified_by": "Administrator",
  "module": "Motor Insurance Broker",
  "name": "Provider Rate Rule",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -99,5 +101,6 @@
  "rows_threshold_for_grid_search": 20,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }
