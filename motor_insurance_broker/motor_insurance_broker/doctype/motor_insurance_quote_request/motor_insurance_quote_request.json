@@ -20,9 +20,9 @@
   "variant",
   "manufacturing_year",
   "fuel_type",
-  "rto_location",
   "idv",
   "vehicle_age",
+  "usage_type",
   "existing_policy_section",
   "existing_provider",
   "existing_policy_number",
@@ -95,7 +95,7 @@
    "label": "Vehicle Info"
   },
   {
-   "fetch_from": "vehicle_type.registration_number",
+   "fetch_from": "vehicle_type.custom_vehicle_reg_no_",
    "fieldname": "vehicle_registration_no",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -103,13 +103,13 @@
    "reqd": 1
   },
   {
-   "fetch_from": "vehicle_type.manufacturer",
+   "fetch_from": "lead.custom_vehicle_make_",
    "fieldname": "make",
    "fieldtype": "Data",
    "label": "Make"
   },
   {
-   "fetch_from": "vehicle_type.model",
+   "fetch_from": "vehicle_type.custom_model",
    "fieldname": "model",
    "fieldtype": "Data",
    "label": "Model"
@@ -118,7 +118,7 @@
    "fetch_from": "vehicle_type.variant",
    "fieldname": "variant",
    "fieldtype": "Data",
-   "label": "Variant"
+   "label": "Color"
   },
   {
    "fetch_from": "vehicle_type.manufacturing_year",
@@ -131,12 +131,6 @@
    "fieldname": "fuel_type",
    "fieldtype": "Data",
    "label": "Fuel Type"
-  },
-  {
-   "fetch_from": "vehicle_type.rto_location",
-   "fieldname": "rto_location",
-   "fieldtype": "Data",
-   "label": "RTO Location"
   },
   {
    "fetch_from": "vehicle_type.idv",
@@ -289,13 +283,18 @@
    "fieldname": "vehicle_type",
    "fieldtype": "Link",
    "label": "Vehicle Type",
-   "options": "Vehicle Stored Details"
+   "options": "Lead"
+  },
+  {
+   "fieldname": "usage_type",
+   "fieldtype": "Data",
+   "label": "Usage Type"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-18 10:54:03.364637",
+ "modified": "2026-03-18 15:38:17.942213",
  "modified_by": "Administrator",
  "module": "Motor Insurance Broker",
  "name": "Motor Insurance Quote Request",

@@ -34,11 +34,13 @@
    "options": "Motor Insurance Quote Request"
   },
   {
+   "fetch_from": "quote_request.customer_name",
    "fieldname": "customer_name",
    "fieldtype": "Data",
    "label": "Customer Name"
   },
   {
+   "fetch_from": "quote_request.vehicle_registration_no",
    "fieldname": "vehicle_registration_no",
    "fieldtype": "Data",
    "label": "Vehicle No"
@@ -55,10 +57,10 @@
    "label": "Policy Number"
   },
   {
+   "fetch_from": "quote_request.coverage_type",
    "fieldname": "coverage_type",
-   "fieldtype": "Link",
-   "label": "Coverage Type",
-   "options": "Coverage Type"
+   "fieldtype": "Data",
+   "label": "Coverage Type"
   },
   {
    "fieldname": "final_premium",
@@ -105,7 +107,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-17 13:29:38.907832",
+ "modified": "2026-03-18 15:03:10.926777",
  "modified_by": "Administrator",
  "module": "Motor Insurance Broker",
  "name": "Final Policy Record",
