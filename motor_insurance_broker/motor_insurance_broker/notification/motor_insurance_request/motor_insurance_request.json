@@ -1,0 +1,32 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2026-03-18 12:36:29.828301",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Lead",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<h3>Welcome to Our Website</h3>\n\n<p>Hello {{ doc.lead_name or doc.contact_name or doc.name }},</p>\n\n<p>Thank you for showing interest in our services. We have received your lead request.</p>\n\n<p>For further processing, please reply with the message <strong>\"Create Quotation\"</strong> and our team will prepare a tailored quotation for you.</p>\n\n<h4>Lead Details</h4>\n\n<ul>\n<li>Company: {{ doc.company_name or 'N/A' }}</li>\n<li>Email: {{ doc.email_id or 'N/A' }}</li>\n<li>Status: {{ doc.status }}</li>\n</ul>\n\n<p>Best regards,<br>\n{{ doc.company or 'Your Company' }}</p>\n",
+ "message_type": "Markdown",
+ "modified": "2026-03-18 13:03:48.095612",
+ "modified_by": "Administrator",
+ "module": "Motor Insurance Broker",
+ "name": "Motor Insurance Request",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "email_id"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "sender": "",
+ "sender_email": "",
+ "subject": "Welcome: {{ doc.lead_name or doc.name  }}"
+}
