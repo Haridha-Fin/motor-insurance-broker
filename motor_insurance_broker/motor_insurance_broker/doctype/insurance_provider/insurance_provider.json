@@ -5,9 +5,20 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "details_section",
+  "section_break_caoa",
   "provider_name",
   "provider_code",
+  "base_rate",
+  "age_loading",
+  "column_break_xfly",
+  "ncb_discount",
+  "api_type",
+  "gst",
+  "idv_section",
+  "idv_calucation",
+  "section_break_oswi",
+  "addons",
+  "details_section",
   "commission_",
   "contact_email",
   "contact_phone",
@@ -57,12 +68,67 @@
    "fieldname": "notes",
    "fieldtype": "Small Text",
    "label": "Notes"
+  },
+  {
+   "fieldname": "section_break_caoa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "base_rate",
+   "fieldtype": "Percent",
+   "label": "Base Rate"
+  },
+  {
+   "fieldname": "age_loading",
+   "fieldtype": "Percent",
+   "label": "Age Loading"
+  },
+  {
+   "fieldname": "column_break_xfly",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ncb_discount",
+   "fieldtype": "Percent",
+   "label": "NCB Discount"
+  },
+  {
+   "fieldname": "api_type",
+   "fieldtype": "Data",
+   "label": "API Type"
+  },
+  {
+   "fieldname": "gst",
+   "fieldtype": "Percent",
+   "label": "GST"
+  },
+  {
+   "fieldname": "section_break_oswi",
+   "fieldtype": "Section Break",
+   "label": "Addons "
+  },
+  {
+   "fieldname": "addons",
+   "fieldtype": "Table",
+   "label": "Addons",
+   "options": "Quote Request Add-on"
+  },
+  {
+   "fieldname": "idv_section",
+   "fieldtype": "Section Break",
+   "label": "IDV"
+  },
+  {
+   "fieldname": "idv_calucation",
+   "fieldtype": "Table",
+   "label": "IDV calucation",
+   "options": "Depreciation Table"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-17 13:31:08.534566",
+ "modified": "2026-03-19 16:24:30.640960",
  "modified_by": "Administrator",
  "module": "Motor Insurance Broker",
  "name": "Insurance Provider",
@@ -83,7 +149,9 @@
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "provider_name"
 }
