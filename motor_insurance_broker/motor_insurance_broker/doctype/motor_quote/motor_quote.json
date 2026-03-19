@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-19 10:13:59.834172",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "motor_lead",
+  "quote_date",
+  "status",
+  "motor_insurance_providers_section",
+  "motor_quotes"
+ ],
+ "fields": [
+  {
+   "fieldname": "motor_lead",
+   "fieldtype": "Link",
+   "label": "Motor Lead",
+   "options": "Lead"
+  },
+  {
+   "fieldname": "quote_date",
+   "fieldtype": "Date",
+   "label": "Quote Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nGenerated\nSelected"
+  },
+  {
+   "fieldname": "motor_insurance_providers_section",
+   "fieldtype": "Section Break",
+   "label": "Motor insurance providers"
+  },
+  {
+   "fieldname": "motor_quotes",
+   "fieldtype": "Table",
+   "label": "Motor quotes",
+   "options": "Motor Quote Item"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-19 10:19:01.559009",
+ "modified_by": "Administrator",
+ "module": "Motor Insurance Broker",
+ "name": "Motor Quote",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

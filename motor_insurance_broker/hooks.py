@@ -144,6 +144,11 @@ app_license = "mit"
 # 		"on_trash": "method"
 # 	}
 # }
+doc_events = {
+	"Lead": {
+		"validate": "motor_insurance_broker.lead_events.set_vehicle_age"
+	}
+}
 
 # Scheduled Tasks
 # ---------------
@@ -246,4 +251,6 @@ app_license = "mit"
 # ------------
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
-
+fixtures = [
+    "Client Script"
+]
