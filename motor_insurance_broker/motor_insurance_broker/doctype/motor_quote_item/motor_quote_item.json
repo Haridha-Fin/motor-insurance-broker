@@ -9,6 +9,8 @@
   "insurer",
   "idv",
   "base_premium",
+  "addon_premium",
+  "addons_breakdown",
   "final_premium",
   "ncb_applied",
   "gst",
@@ -30,6 +32,16 @@
    "fieldname": "base_premium",
    "fieldtype": "Data",
    "label": "Base Premium"
+  },
+  {
+   "fieldname": "addon_premium",
+   "fieldtype": "Currency",
+   "label": "Add-on Premium"
+  },
+  {
+   "fieldname": "addons_breakdown",
+   "fieldtype": "Small Text",
+   "label": "Add-ons"
   },
   {
    "fieldname": "final_premium",
