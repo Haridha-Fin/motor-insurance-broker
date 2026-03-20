@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:provider_name",
  "creation": "2026-03-17 13:26:49.367962",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -10,10 +11,14 @@
   "provider_code",
   "base_rate",
   "age_loading",
+  "zero_dep_rate",
   "column_break_xfly",
   "ncb_discount",
   "api_type",
   "gst",
+  "od_rate",
+  "engine_protect_rate",
+  "rti_rate",
   "idv_section",
   "idv_calucation",
   "section_break_oswi",
@@ -36,7 +41,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Provider Name",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "provider_code",
@@ -123,15 +129,36 @@
    "fieldtype": "Table",
    "label": "IDV calucation",
    "options": "Depreciation Table"
+  },
+  {
+   "fieldname": "od_rate",
+   "fieldtype": "Percent",
+   "label": "OD rate"
+  },
+  {
+   "fieldname": "zero_dep_rate",
+   "fieldtype": "Percent",
+   "label": "Zero Dep Rate"
+  },
+  {
+   "fieldname": "engine_protect_rate",
+   "fieldtype": "Percent",
+   "label": "Engine Protect Rate"
+  },
+  {
+   "fieldname": "rti_rate",
+   "fieldtype": "Percent",
+   "label": "RTI Rate"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-19 16:24:30.640960",
+ "modified": "2026-03-20 13:11:08.954538",
  "modified_by": "Administrator",
  "module": "Motor Insurance Broker",
  "name": "Insurance Provider",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

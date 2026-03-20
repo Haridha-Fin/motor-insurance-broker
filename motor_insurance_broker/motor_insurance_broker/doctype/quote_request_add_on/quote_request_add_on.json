@@ -6,28 +6,41 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "insurer",
   "addon",
+  "premium",
   "required"
  ],
  "fields": [
   {
+   "fieldname": "insurer",
+   "fieldtype": "Link",
+   "label": "Insurer",
+   "options": "Insurance Provider"
+  },
+  {
    "fieldname": "addon",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "label": "Add-on",
-   "options": "Insurance Add-on Master"
+   "options": "Insurance Add-on"
   },
   {
    "default": "0",
    "fieldname": "required",
    "fieldtype": "Check",
    "label": "Required"
+  },
+  {
+   "fieldname": "premium",
+   "fieldtype": "Currency",
+   "label": "Premium"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-03-17 14:01:29.254984",
+ "modified": "2026-03-20 11:07:01.448994",
  "modified_by": "Administrator",
  "module": "Motor Insurance Broker",
  "name": "Quote Request Add-on",
