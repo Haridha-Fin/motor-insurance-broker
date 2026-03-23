@@ -8,6 +8,7 @@
  "field_order": [
   "motor_lead",
   "customer_name",
+  "email",
   "quote_date",
   "status",
   "motor_insurance_providers_section",
@@ -31,7 +32,7 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Draft\nGenerated\nSelected"
+   "options": "Draft\nApproved\nSelected"
   },
   {
    "fieldname": "motor_insurance_providers_section",
@@ -60,12 +61,19 @@
    "fieldtype": "Table",
    "label": "Add on provided ",
    "options": "Quote Request Add-on"
+  },
+  {
+   "fetch_from": "motor_lead.email_id",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email ",
+   "options": "Email"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-20 14:15:34.721798",
+ "modified": "2026-03-20 17:16:04.833594",
  "modified_by": "Administrator",
  "module": "Motor Insurance Broker",
  "name": "Motor Quote",
