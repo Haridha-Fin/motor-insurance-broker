@@ -19,7 +19,11 @@
  "list_columns": [],
  "login_required": 0,
  "max_attachment_size": 0,
+<<<<<<< HEAD
  "modified": "2026-03-23 11:27:55.800297",
+=======
+ "modified": "2026-03-23 10:47:45.149127",
+>>>>>>> 5d698ca (Webform)
  "modified_by": "Administrator",
  "module": "Motor Insurance Broker",
  "name": "motor-insurance-webform",
@@ -268,7 +272,11 @@
    "label": "Coverage Type",
    "max_length": 0,
    "max_value": 0,
+<<<<<<< HEAD
    "options": "\nComprehensive\nThird-Party Liability\nOwn-Damage",
+=======
+   "options": "\nComprehensive\nThird-Party Liability\nOwn-Damage\n",
+>>>>>>> 5d698ca (Webform)
    "precision": "",
    "read_only": 0,
    "reqd": 0,
@@ -280,6 +288,19 @@
    "fieldtype": "Column Break",
    "hidden": 0,
    "label": "",
+   "max_length": 0,
+   "max_value": 0,
+   "precision": "",
+   "read_only": 0,
+   "reqd": 0,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "custom_cc",
+   "fieldtype": "Int",
+   "hidden": 0,
+   "label": "CC",
    "max_length": 0,
    "max_value": 0,
    "precision": "",
@@ -343,10 +364,17 @@
   },
   {
    "allow_read_on_all_link_options": 0,
+<<<<<<< HEAD
    "fieldname": "custom_required_idv",
    "fieldtype": "Currency",
    "hidden": 0,
    "label": "Required IDV",
+=======
+   "fieldname": "custom_price",
+   "fieldtype": "Currency",
+   "hidden": 0,
+   "label": "Price",
+>>>>>>> 5d698ca (Webform)
    "max_length": 0,
    "max_value": 0,
    "precision": "",
