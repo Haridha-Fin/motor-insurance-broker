@@ -21,37 +21,44 @@
    "fieldname": "insurer",
    "fieldtype": "Link",
    "label": "Insurer",
-   "options": "Insurance Provider"
+   "options": "Insurance Provider",
+   "read_only": 1
   },
   {
    "fieldname": "idv",
    "fieldtype": "Data",
-   "label": "IDV"
+   "label": "IDV",
+   "read_only": 1
   },
   {
    "fieldname": "base_premium",
    "fieldtype": "Data",
-   "label": "Base Premium"
+   "label": "Base Premium",
+   "read_only": 1
   },
   {
    "fieldname": "addon_premium",
    "fieldtype": "Currency",
-   "label": "Add-on Premium"
+   "label": "Add-on Premium",
+   "read_only": 1
   },
   {
    "fieldname": "addons_breakdown",
    "fieldtype": "Small Text",
-   "label": "Add-ons"
+   "label": "Add-ons",
+   "read_only": 1
   },
   {
    "fieldname": "final_premium",
    "fieldtype": "Data",
-   "label": "Final Premium "
+   "label": "Final Premium ",
+   "read_only": 1
   },
   {
    "fieldname": "ncb_applied",
    "fieldtype": "Data",
-   "label": "NCB Applied"
+   "label": "NCB Applied",
+   "read_only": 1
   },
   {
    "default": "0",
@@ -62,14 +69,15 @@
   {
    "fieldname": "gst",
    "fieldtype": "Currency",
-   "label": "GST"
+   "label": "GST",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-03-19 17:25:36.882719",
+ "modified": "2026-03-20 17:25:18.037718",
  "modified_by": "Administrator",
  "module": "Motor Insurance Broker",
  "name": "Motor Quote Item",
