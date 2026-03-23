@@ -252,5 +252,7 @@ doc_events = {
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 fixtures = [
-    "Client Script"
+    {"dt": "Client Script"},
+    {"dt": "Insurance Provider"},
+    {"dt": "Insurance Add-on"}
 ]

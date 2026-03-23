@@ -1,0 +1,42 @@
+[
+ {
+  "active": 0,
+  "add_on_code": null,
+  "add_on_name": "Engine Protection",
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Insurance Add-on",
+  "modified": "2026-03-20 10:50:09.119058",
+  "name": "Engine Protection"
+ },
+ {
+  "active": 0,
+  "add_on_code": null,
+  "add_on_name": "Rode Side Assistance",
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Insurance Add-on",
+  "modified": "2026-03-20 10:50:29.073076",
+  "name": "Rode Side Assistance"
+ },
+ {
+  "active": 0,
+  "add_on_code": null,
+  "add_on_name": "Return Invoice",
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Insurance Add-on",
+  "modified": "2026-03-20 10:50:40.460899",
+  "name": "Return Invoice"
+ },
+ {
+  "active": 0,
+  "add_on_code": null,
+  "add_on_name": "Zero Dep",
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Insurance Add-on",
+  "modified": "2026-03-20 10:49:51.630383",
+  "name": "Zero Dep"
+ }
+]
